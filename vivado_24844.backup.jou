@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Mar 16 22:00:02 2024
+# Process ID: 24844
+# Current directory: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28600 C:\Users\Luo Zhiyang\OneDrive - National University of Singapore\Y2S2\EE2026\Project\MODS_Group.xpr\MODS\MODS.xpr
+# Log file: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/vivado.log
+# Journal file: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.xpr}
+close [ open {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/task_b.v} w ]
+add_files {{C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/task_b.v}}
+close [ open {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/counter.v} w ]
+add_files {{C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/counter.v}}
+close [ open {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/reach200ms.v} w ]
+add_files {{C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/reach200ms.v}}
+close [ open {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/altcolour.v} w ]
+add_files {{C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/altcolour.v}}
+close [ open {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/altstep.v} w ]
+add_files {{C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/altstep.v}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+close [ open {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/task_c.v} w ]
+add_files {{C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/task_c.v}}
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close [ open {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/task_a.v} w ]
+add_files {{C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/task_a.v}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close [ open {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/counter_a.v} w ]
+add_files {{C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.srcs/sources_1/new/counter_a.v}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Group.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

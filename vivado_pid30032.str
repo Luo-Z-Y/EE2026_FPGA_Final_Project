@@ -1,0 +1,1352 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 30032
+License: Customer
+
+Current time: 	Sat Mar 23 18:01:16 SGT 2024
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1440
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 105 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Luo Zhiyang
+User home directory: C:/Users/Luo Zhiyang
+User working directory: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado
+HDI_APPROOT: D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Luo Zhiyang/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Luo Zhiyang/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Luo Zhiyang/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/vivado.log
+Vivado journal file location: 	C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/vivado.jou
+Engine tmp dir: 	C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/.Xil/Vivado-30032-LAPTOP-2BP554E9
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado/2018.2
+XILINX_SDK: D:/Xilinx_Vivado_SDK_2018.2_0614_1954/SDK/2018.2
+XILINX_VIVADO: D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado/2018.2
+
+
+GUI allocated memory:	173 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 540 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Luo Zhiyang\OneDrive - National University of Singapore\Y2S2\EE2026\EE2026 Project\MODS_Final_Project.xpr\MODS\MODS.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// [GUI Memory]: 67 MB (+68239kb) [00:00:04]
+// [Engine Memory]: 506 MB (+379443kb) [00:00:04]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// Tcl Message: open_project {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS' 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 78 MB (+7515kb) [00:00:08]
+// [Engine Memory]: 569 MB (+39295kb) [00:00:08]
+// [GUI Memory]: 89 MB (+7060kb) [00:00:09]
+// [Engine Memory]: 606 MB (+9030kb) [00:00:10]
+// Tcl Message: open_project {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS' INFO: [Project 1-313] Project file moved from 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/Project/MODS_Final_Project.xpr/MODS' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx_Vivado_SDK_2018.2_0614_1954/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 639 MB. GUI used memory: 51 MB. Current time: 3/23/24 6:01:20 PM SGT
+// [Engine Memory]: 639 MB (+2272kb) [00:00:11]
+// Project name: MODS; location: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 906.930 ; gain = 169.285 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 105 MB (+12556kb) [00:00:13]
+// [GUI Memory]: 159 MB (+51124kb) [00:00:14]
+// [Engine Memory]: 735 MB (+67419kb) [00:00:14]
+// [GUI Memory]: 177 MB (+10038kb) [00:00:14]
+// [GUI Memory]: 189 MB (+4072kb) [00:00:16]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), vga : vga_controller (vga_sync.v)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), vga : vga_controller (vga_sync.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), ba : board_animation (board_animation.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), ba : board_animation (board_animation.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 775 MB. GUI used memory: 66 MB. Current time: 3/23/24 6:01:38 PM SGT
+// [Engine Memory]: 775 MB (+3897kb) [00:00:30]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), at : ascii_test (ascii_test.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), at : ascii_test (ascii_test.v)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), at : ascii_test (ascii_test.v), rom : ascii_rom (ascii_rom.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), at : ascii_test (ascii_test.v), rom : ascii_rom (ascii_rom.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+floatView(PAResourceOtoP.PAViews_CODE, "ascii_rom.v"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "ascii_rom.v"); // aw (aE, aG)
+// Elapsed time: 53 seconds
+floatView(PAResourceOtoP.PAViews_CODE, "ascii_test.v"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "ascii_test.v"); // aw (aE, aG)
+// Elapsed time: 15 seconds
+selectCodeEditor("board_animation.v", 115, 291); // ce (w, ck)
+selectCodeEditor("board_animation.v", 154, 346); // ce (w, ck)
+selectCodeEditor("ascii_test.v", 1401, 498); // ce (w, aG)
+// Elapsed time: 27 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rgb"); // l (aQ, aG)
+// Elapsed time: 11 seconds
+selectCodeEditor("ascii_test.v", 152, 320); // ce (w, aG)
+// Elapsed time: 13 seconds
+selectCodeEditor("ascii_test.v", 513, 525); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 578, 551); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 520, 522); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 352, 524); // ce (w, aG)
+// Elapsed time: 103 seconds
+selectCodeEditor("ascii_test.v", 842, 478); // ce (w, aG)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+floatView(PAResourceOtoP.PAViews_CODE, "ascii_rom.v"); // aw (aE, ck)
+floatView(PAResourceOtoP.PAViews_CODE, "ascii_test.v"); // aw (aE, ck)
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// HMemoryUtils.trashcanNow. Engine heap size: 796 MB. GUI used memory: 79 MB. Current time: 3/23/24 6:06:13 PM SGT
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACA95FA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,451 MB (+667907kb) [00:05:09]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (aG): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (aG)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("ascii_test.v", 726, 887); // ce (w, aG)
+// Elapsed time: 271 seconds
+selectCodeEditor("ascii_test.v", 847, 511); // ce (w, aG)
+// Elapsed time: 383 seconds
+selectCodeEditor("ascii_rom.v", 873, 447); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_rom.v", 'c'); // ce (w, aG)
+// Elapsed time: 52 seconds
+selectCodeEditor("ascii_rom.v", 1193, 453); // ce (w, aG)
+// Elapsed time: 25 seconds
+selectCodeEditor("ascii_test.v", 778, 641); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_test.v", 'c'); // ce (w, aG)
+// Elapsed time: 36 seconds
+selectCodeEditor("ascii_test.v", 743, 614); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 434, 591); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 398, 682); // ce (w, aG)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 319, 346); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 563, 389); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 263, 305); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 314, 334); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' is already up-to-date 
+// Tcl Message: [Sat Mar 23 18:19:51 2024] Launched synth_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/synth_1/runme.log [Sat Mar 23 18:19:51 2024] Launched impl_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 42 seconds
+selectCodeEditor("ascii_rom.v", 225, 736); // ce (w, aG)
+// Elapsed time: 17 seconds
+selectCodeEditor("ascii_test.v", 263, 616); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 350, 526); // ce (w, aG)
+// TclEventType: RUN_COMPLETED
+// ah (aG): Bitstream Generation Completed: addNotify
+// Elapsed time: 62 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (aG)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,472 MB. GUI used memory: 82 MB. Current time: 3/23/24 6:21:58 PM SGT
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 73 seconds
+selectCodeEditor("ascii_test.v", 530, 645); // ce (w, aG)
+// Elapsed time: 11 seconds
+selectCodeEditor("ascii_test.v", 63, 820); // ce (w, aG)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 206 MB (+7362kb) [00:22:49]
+// [GUI Memory]: 217 MB (+674kb) [00:22:49]
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' is already up-to-date 
+// Tcl Message: [Sat Mar 23 18:24:00 2024] Launched synth_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/synth_1/runme.log [Sat Mar 23 18:24:00 2024] Launched impl_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/runme.log 
+// [GUI Memory]: 234 MB (+6245kb) [00:22:54]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (aG): Bitstream Generation Completed: addNotify
+// Elapsed time: 106 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (aG)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (aG): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (aG)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+selectCodeEditor("ascii_rom.v", 787, 682); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_rom.v", 'c'); // ce (w, aG)
+// Elapsed time: 57 seconds
+selectCodeEditor("ascii_test.v", 835, 506); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_test.v", 'v'); // ce (w, aG)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' is already up-to-date 
+// Tcl Message: [Sat Mar 23 18:27:05 2024] Launched synth_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/synth_1/runme.log [Sat Mar 23 18:27:05 2024] Launched impl_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/runme.log 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (aG): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// HOptionPane Error: 'The file 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // JButton (A, H)
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (aG)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (aG): Bitstream Generation Completed: addNotify
+// Elapsed time: 72 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (aG)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (aG): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (aG)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,507 MB. GUI used memory: 57 MB. Current time: 3/23/24 6:28:43 PM SGT
+// Elapsed time: 33 seconds
+selectCodeEditor("ascii_rom.v", 93, 444); // ce (w, aG)
+// Elapsed time: 11 seconds
+selectCodeEditor("ascii_rom.v", 1, 231); // ce (w, aG)
+selectCodeEditor("ascii_rom.v", 199, 482); // ce (w, aG)
+selectCodeEditor("ascii_rom.v", 4, 230); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_rom.v", 'c'); // ce (w, aG)
+// Elapsed time: 15 seconds
+selectCodeEditor("ascii_rom.v", 1, 224); // ce (w, aG)
+// Elapsed time: 15 seconds
+typeControlKey((HResource) null, "ascii_rom.v", 'c'); // ce (w, aG)
+// Elapsed time: 10 seconds
+selectCodeEditor("ascii_rom.v", 114, 888); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_rom.v", 'c'); // ce (w, aG)
+// Elapsed time: 31 seconds
+selectCodeEditor("ascii_test.v", 274, 386); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_test.v", 'c'); // ce (w, aG)
+// Elapsed time: 69 seconds
+selectCodeEditor("ascii_test.v", 252, 453); // ce (w, aG)
+// Elapsed time: 206 seconds
+selectCodeEditor("ascii_test.v", 472, 449); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_test.v", 'c'); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 450, 462); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 378, 325); // ce (w, aG)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, aG)
+selectCodeEditor("ascii_test.v", 292, 340); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_test.v", 'c'); // ce (w, aG)
+// Elapsed time: 46 seconds
+selectCodeEditor("ascii_test.v", 192, 350); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 190, 368); // ce (w, aG)
+// Elapsed time: 101 seconds
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "ascii_test.v*"); // aw (aE, aG)
+selectCodeEditor("ascii_test.v", 779, 589); // ce (w, aG)
+typeControlKey(null, null, 'z');
+selectCodeEditor("ascii_test.v", 588, 346); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 648, 370); // ce (w, aG)
+// Elapsed time: 12 seconds
+selectCodeEditor("ascii_test.v", 812, 479); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_test.v", 'v'); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 656, 311); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 341, 340); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 158, 316); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 174, 317); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 159, 327); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 163, 319); // ce (w, aG)
+// Elapsed time: 49 seconds
+selectCodeEditor("ascii_rom.v", 586, 609); // ce (w, aG)
+selectCodeEditor("ascii_rom.v", 215, 556); // ce (w, aG)
+selectCodeEditor("ascii_rom.v", 216, 557); // ce (w, aG)
+selectCodeEditor("ascii_rom.v", 203, 559); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_rom.v", 'c'); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 762, 568); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 365, 446); // ce (w, aG)
+// Elapsed time: 77 seconds
+selectCodeEditor("ascii_rom.v", 136, 312); // ce (w, aG)
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// 'cv' command handler elapsed time: 5 seconds
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("ascii_test.v", 1622, 502); // ce (w, aG)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' is already up-to-date 
+// Tcl Message: [Sat Mar 23 18:41:39 2024] Launched synth_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/synth_1/runme.log [Sat Mar 23 18:41:39 2024] Launched impl_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (aG): Bitstream Generation Completed: addNotify
+// Elapsed time: 80 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (aG)
+// Elapsed time: 89 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false, false, false, false, false, true); // u (O, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false, false, false, false, false, true); // u (O, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183ACA95FA 
+// n (aG): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (aG)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// [GUI Memory]: 246 MB (+686kb) [00:43:32]
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACA95FA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// bx (ck):  Auto Connect : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false, false, false, false, false, true); // u (O, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false, false, false, false, false, true); // u (O, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false, false, false, false, true, false); // u (O, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false, false, false, false, true, false); // u (O, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false, false, false, false, false, true); // u (O, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (aG): Program Device: addNotify
+setText(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit"); // al (ak, bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (aG)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 62 seconds
+selectCodeEditor("ascii_rom.v", 649, 557); // ce (w, aG)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// [GUI Memory]: 313 MB (+56717kb) [00:45:15]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ascii_rom.v", 1208, 136); // ce (w, aG)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 37 seconds
+selectCodeEditor("ascii_test.v", 154, 346); // ce (w, aG)
+// Elapsed time: 44 seconds
+selectCodeEditor("ascii_test.v", 35, 733); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 35, 732); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 43, 735); // ce (w, aG)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ascii_test.v", 671, 739); // ce (w, aG)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectCodeEditor("ascii_rom.v", 605, 738); // ce (w, aG)
+selectCodeEditor("ascii_rom.v", 205, 442); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_rom.v", 'c'); // ce (w, aG)
+typeControlKey((HResource) null, "ascii_test.v", 'v'); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 248, 764); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 244, 766, false, false, false, false, true); // ce (w, aG) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 41 seconds
+selectCodeEditor("ascii_test.v", 221, 776); // ce (w, aG)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, aG)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (aG): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (aG)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 49 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' is already up-to-date 
+// Tcl Message: [Sat Mar 23 18:49:55 2024] Launched synth_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/synth_1/runme.log [Sat Mar 23 18:49:55 2024] Launched impl_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (aG): Bitstream Generation Completed: addNotify
+// Elapsed time: 104 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (aG)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, aG)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (aG): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (aG)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 158 seconds
+selectCodeEditor("ascii_test.v", 240, 767); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 273, 776); // ce (w, aG)
+selectCodeEditor("ascii_test.v", 251, 769); // ce (w, aG)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 75 seconds
+selectCodeEditor("ascii_test.v", 374, 702); // ce (w, aG)
+// Elapsed time: 41 seconds
+selectCodeEditor("ascii_test.v", 111, 737); // ce (w, aG)
+// [GUI Memory]: 331 MB (+3464kb) [00:56:28]
+// [GUI Memory]: 349 MB (+560kb) [00:57:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,521 MB. GUI used memory: 60 MB. Current time: 3/23/24 6:58:44 PM SGT
+// Elapsed time: 143 seconds
+selectCodeEditor("ascii_test.v", 325, 766); // ce (w, aG)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "ascii_test.v"); // aw (aE, aG)
+unMaximizeFrame(PAResourceOtoP.PAViews_CODE, "ascii_test.v"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "ascii_test.v"); // aw (aE, aG)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,521 MB. GUI used memory: 74 MB. Current time: 3/23/24 7:28:44 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,521 MB. GUI used memory: 73 MB. Current time: 3/23/24 7:58:44 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,521 MB. GUI used memory: 73 MB. Current time: 3/23/24 8:28:45 PM SGT
+// PAResourceOtoP.PAViews_CODE: Code: close view
+// Elapsed time: 6628 seconds
+closeFrame(PAResourceOtoP.PAViews_CODE, "ascii_test.v"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_CODE, "ascii_test.v"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "ascii_test.v"); // aw (aE, aG)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 213 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MouseCtl(Behavioral) (Mouse_Control.vhd)]", 11); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MouseCtl(Behavioral) (Mouse_Control.vhd)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MouseCtl(Behavioral) (Mouse_Control.vhd), Inst_Ps2Interface : Ps2Interface(Behavioral) (Ps2Interface.vhd)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MouseCtl(Behavioral) (Mouse_Control.vhd), Inst_Ps2Interface : Ps2Interface(Behavioral) (Ps2Interface.vhd)]", 12, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 31 seconds
+floatView(PAResourceOtoP.PAViews_CODE, "Ps2Interface.vhd"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "Ps2Interface.vhd"); // aw (aE, aG)
+selectCodeEditor("Ps2Interface.vhd", 299, 219); // ce (w, aG)
+typeControlKey((HResource) null, "Ps2Interface.vhd", 'c'); // ce (w, aG)
+// Elapsed time: 10 seconds
+selectCodeEditor("Ps2Interface.vhd", 580, 290); // ce (w, aG)
+selectCodeEditor("Ps2Interface.vhd", 315, 233); // ce (w, aG)
+// PAResourceOtoP.PAViews_CODE: Code: close view
+// Elapsed time: 14 seconds
+closeFrame(PAResourceOtoP.PAViews_CODE, "Ps2Interface.vhd"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_CODE, "Ps2Interface.vhd"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "Ps2Interface.vhd"); // aw (aE, aG)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MouseCtl(Behavioral) (Mouse_Control.vhd)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MouseCtl(Behavioral) (Mouse_Control.vhd)]", 11, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+floatView(PAResourceOtoP.PAViews_CODE, "Mouse_Control.vhd"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "Mouse_Control.vhd"); // aw (aE, aG)
+selectCodeEditor("Mouse_Control.vhd", 779, 231); // ce (w, aG)
+// Elapsed time: 79 seconds
+selectCodeEditor("Mouse_Control.vhd", 397, 584); // ce (w, aG)
+selectCodeEditor("Mouse_Control.vhd", 554, 594); // ce (w, aG)
+selectCodeEditor("Mouse_Control.vhd", 396, 588); // ce (w, aG)
+selectCodeEditor("Mouse_Control.vhd", 540, 628); // ce (w, aG)
+selectCodeEditor("Mouse_Control.vhd", 386, 593); // ce (w, aG)
+selectCodeEditor("Mouse_Control.vhd", 538, 609); // ce (w, aG)
+selectCodeEditor("Mouse_Control.vhd", 391, 583); // ce (w, aG)
+selectCodeEditor("Mouse_Control.vhd", 524, 604); // ce (w, aG)
+selectCodeEditor("Mouse_Control.vhd", 392, 583); // ce (w, aG)
+selectCodeEditor("Mouse_Control.vhd", 538, 603); // ce (w, aG)
+selectCodeEditor("Mouse_Control.vhd", 394, 587); // ce (w, aG)
+selectCodeEditor("Mouse_Control.vhd", 536, 603); // ce (w, aG)
+// Elapsed time: 94 seconds
+selectCodeEditor("Mouse_Control.vhd", 1805, 952); // ce (w, aG)
+// Elapsed time: 41 seconds
+selectCodeEditor("Mouse_Control.vhd", 121, 588); // ce (w, aG)
+selectCodeEditor("Mouse_Control.vhd", 590, 692); // ce (w, aG)
+// Elapsed time: 17 seconds
+dockFrame(PAResourceOtoP.PAViews_CODE, "Mouse_Control.vhd"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "Mouse_Control.vhd"); // aw (aE, aG)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Mouse_Control.vhd", 3); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,521 MB. GUI used memory: 75 MB. Current time: 3/23/24 8:58:45 PM SGT
+// Elapsed time: 171 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// Elapsed time: 61 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, paint (paint.v)]", 7); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, paint (paint.v)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, paint (paint.v)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 15 seconds
+selectCodeEditor("paint.v", 388, 351); // ce (w, ck)
+selectCodeEditor("paint.v", 10, 150); // ce (w, ck)
+// Elapsed time: 12 seconds
+floatView(PAResourceOtoP.PAViews_CODE, "paint.v"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "paint.v"); // aw (aE, aG)
+// Elapsed time: 67 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "board_animation.v", 2); // k (j, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), at : ascii_test (ascii_test.v)]", 3); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), at : ascii_test (ascii_test.v)]", 3, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), at : ascii_test (ascii_test.v)]", 3, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "cursor_animation"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/new/cursor_animation.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/new/cursor_animation.v}} 
+// I (ck): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), ba : board_animation (board_animation.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), ba : board_animation (board_animation.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("board_animation.v", 163, 180); // ce (w, ck)
+typeControlKey((HResource) null, "board_animation.v", 'c'); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cursor_animation (cursor_animation.v)]", 13, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cursor_animation (cursor_animation.v)]", 13, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("cursor_animation.v", 246, 217); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 202, 325); // ce (w, ck)
+typeControlKey((HResource) null, "cursor_animation.v", 'v'); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 122, 22); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cursor_animation.v", 167, 127); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("cursor_animation.v", 255, 128); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 118, 193); // ce (w, ck)
+// Elapsed time: 37 seconds
+selectCodeEditor("paint.v", 500, 558); // ce (w, aG)
+// Elapsed time: 27 seconds
+selectCodeEditor("paint.v", 186, 259); // ce (w, aG)
+selectCodeEditor("paint.v", 370, 391); // ce (w, aG)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 58 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Mouse_Control.vhd", 3); // k (j, ck)
+selectCodeEditor("Mouse_Control.vhd", 266, 129); // ce (w, ck)
+typeControlKey((HResource) null, "Mouse_Control.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("Mouse_Control.vhd", 263, 191); // ce (w, ck)
+selectCodeEditor("Mouse_Control.vhd", 216, 233); // ce (w, ck)
+typeControlKey((HResource) null, "Mouse_Control.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("Mouse_Control.vhd", 20, 131); // ce (w, ck)
+selectCodeEditor("Mouse_Control.vhd", 97, 94); // ce (w, ck)
+selectCodeEditor("Mouse_Control.vhd", 161, 218); // ce (w, ck)
+selectCodeEditor("Mouse_Control.vhd", 2, 261); // ce (w, ck)
+selectCodeEditor("Mouse_Control.vhd", 88, 423); // ce (w, ck)
+selectCodeEditor("Mouse_Control.vhd", 27, 404); // ce (w, ck)
+selectCodeEditor("Mouse_Control.vhd", 158, 429); // ce (w, ck)
+typeControlKey((HResource) null, "Mouse_Control.vhd", 'c'); // ce (w, ck)
+// Elapsed time: 49 seconds
+selectCodeEditor("Mouse_Control.vhd", 255, 246, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Mouse_Control.vhd", 51, 96); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cursor_animation.v", 4); // k (j, ck)
+selectCodeEditor("cursor_animation.v", 308, 270); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 280, 265); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 2, 227); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("cursor_animation.v", 164, 337); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("cursor_animation.v", 452, 298); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("cursor_animation.v", 368, 291); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 167, 257); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 269, 274); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 232, 288); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 354, 293); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 316, 293); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 361, 285); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 108, 409); // ce (w, ck)
+typeControlKey((HResource) null, "cursor_animation.v", 'c'); // ce (w, ck)
+// Elapsed time: 195 seconds
+selectCodeEditor("cursor_animation.v", 114, 230); // ce (w, ck)
+typeControlKey((HResource) null, "cursor_animation.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 200, 313); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top_Student.v", 235, 283); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 234, 373); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 900, 381); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 904, 378); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 904, 378, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 945, 380); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 902, 386); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 905, 384, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 920, 390); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 951, 382); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("Top_Student.v", 716, 214); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 598, 247); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 325, 286); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 316, 296); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 321, 286); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 155 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' is already up-to-date 
+// Tcl Message: [Sat Mar 23 21:16:27 2024] Launched synth_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/synth_1/runme.log [Sat Mar 23 21:16:27 2024] Launched impl_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("Top_Student.v", 70, 139); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 61, 140); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 154, 142); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 933, 143); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 819, 204); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 78, 109); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 380, 146); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 275, 141); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 372, 164); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cursor_animation.v", 4); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' is already up-to-date 
+// Tcl Message: [Sat Mar 23 21:17:21 2024] Launched synth_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/synth_1/runme.log [Sat Mar 23 21:17:21 2024] Launched impl_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 20 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-1031] rgb_next_cusor is not declared [C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/new/Top_Student.v:37]. ]", 5, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Luo Zhiyang\OneDrive - National University of Singapore\Y2S2\EE2026\EE2026 Project\MODS_Final_Project.xpr\MODS\MODS.srcs\sources_1\new\Top_Student.v;-;;-;16;-;line;-;37;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("Top_Student.v", 360, 140); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 340, 139); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' is already up-to-date 
+// Tcl Message: [Sat Mar 23 21:17:54 2024] Launched synth_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/synth_1/runme.log [Sat Mar 23 21:17:54 2024] Launched impl_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 80 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// Elapsed time: 221 seconds
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net vga/B2[0] has multiple drivers: vga/v_count_reg_reg[0]/Q, and ca/mouse_control/ypos_reg[0]/Q.. ]", 8, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net vga/B2[0] has multiple drivers: vga/v_count_reg_reg[0]/Q, and ca/mouse_control/ypos_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net vga/B2[5] has multiple drivers: vga/v_count_reg_reg[5]/Q, and ca/mouse_control/ypos_reg[5]/Q.. ]", 13, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net vga/B2[0] has multiple drivers: vga/v_count_reg_reg[0]/Q, and ca/mouse_control/ypos_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net vga/B2[5] has multiple drivers: vga/v_count_reg_reg[5]/Q, and ca/mouse_control/ypos_reg[5]/Q.. ]", 13, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net vga/B2[0] has multiple drivers: vga/v_count_reg_reg[0]/Q, and ca/mouse_control/ypos_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net vga/B2[1] has multiple drivers: vga/v_count_reg_reg[1]/Q, and ca/mouse_control/ypos_reg[1]/Q.. ]", 9, false); // ah (O, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top_Student.v", 317, 289); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 824, 496); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cursor_animation.v", 4); // k (j, ck)
+selectCodeEditor("cursor_animation.v", 446, 314); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Mouse_Control.vhd", 3); // k (j, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "vga", true); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "vga"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "vga"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "vga"); // l (aQ, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aQ, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cursor_animation.v", 4); // k (j, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "vga", true); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "vga"); // l (aQ, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "vga"); // l (aQ, ck)
+selectCodeEditor("cursor_animation.v", 614, 305); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ypos", true); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ypos"); // l (aQ, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aQ, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Mouse_Control.vhd", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cursor_animation.v", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Mouse_Control.vhd", 3); // k (j, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ypos"); // l (aQ, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 28, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 28, false, false, false, false, false, true); // ah (O, ck) - Double Click
+// Elapsed time: 36 seconds
+selectCodeEditor("Mouse_Control.vhd", 395, 393); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cursor_animation.v", 4); // k (j, ck)
+// Elapsed time: 36 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aQ, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("cursor_animation.v", 337, 299); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 154, 207); // ce (w, ck)
+typeControlKey((HResource) null, "cursor_animation.v", 'v'); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 327, 383); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 278, 363); // ce (w, ck)
+typeControlKey((HResource) null, "cursor_animation.v", 'v'); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 161, 645); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 308, 679); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 90, 740); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("cursor_animation.v", 302, 371); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 280, 124); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 279, 132); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 261, 24); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 289, 151); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 288, 137); // ce (w, ck)
+typeControlKey((HResource) null, "cursor_animation.v", 'v'); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 67, 166); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 59, 168); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 100, 200); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cursor_animation.v", 218, 167); // ce (w, ck)
+selectCodeEditor("cursor_animation.v", 260, 142); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 978, 535); // ce (w, ck)
+// Elapsed time: 35 seconds
+selectCodeEditor("Top_Student.v", 1260, 528); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1323, 691, false, true, false, false, false); // ce (w, ck) - Control Key
+selectCodeEditor("Top_Student.v", 1348, 531); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1344, 528, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 1349, 528); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1351, 530); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1349, 563); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1350, 532); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_Student.v", 1348, 571); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 812, 545); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 999, 528); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_Student.v", 567, 226); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "board_animation.v", 2); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Mouse_Control.vhd", 3); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cursor_animation.v", 4); // k (j, ck)
+selectCodeEditor("cursor_animation.v", 221, 199); // ce (w, ck)
+typeControlKey((HResource) null, "cursor_animation.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "board_animation.v", 2); // k (j, ck)
+selectCodeEditor("board_animation.v", 151, 159); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 123, 258); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 231, 301); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 299, 261); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 223, 234); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 223, 234, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 219, 237); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 215, 237); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 294, 334); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,521 MB. GUI used memory: 93 MB. Current time: 3/23/24 9:28:45 PM SGT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_Student.v", 285, 325); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 194, 298); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Mouse_Control.vhd", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cursor_animation.v", 4); // k (j, ck)
+selectCodeEditor("cursor_animation.v", 506, 195); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' is already up-to-date 
+// Tcl Message: [Sat Mar 23 21:29:46 2024] Launched synth_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/synth_1/runme.log [Sat Mar 23 21:29:46 2024] Launched impl_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// Elapsed time: 150 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 11, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 12, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 13, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 13, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Basys3_Master.xdc", 972, 197); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 257 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Pin Planning, [DRC NSTD-1] Unspecified I/O Standard: 2 out of 18 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: PS2Clk, and PS2Data.. ]", 7, false); // ah (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci' is already up-to-date 
+// Tcl Message: [Sat Mar 23 21:36:49 2024] Launched synth_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/synth_1/runme.log [Sat Mar 23 21:36:49 2024] Launched impl_1... Run output will be captured here: C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 111 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
