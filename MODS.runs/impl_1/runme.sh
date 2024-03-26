@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/MODS.runs/impl_1'
+HD_PWD='C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/EE2026_FPGA_Final_Project/MODS.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

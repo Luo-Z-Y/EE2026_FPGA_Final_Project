@@ -77,7 +77,8 @@ always @* begin
     if (~video_on)
         rgb = 12'h000;      // blank
     else if (x >= cursor_x && x < cursor_x + 5 && y >= cursor_y && y < cursor_y + 5) // Ensure cursor is within valid screen range
-        rgb = 12'h000;  // Black cursor
+        if (left) rgb = 12'hF00; //Blue cursor
+        else rgb = 12'h000;  // Black cursor
     else
         rgb = 12'hFFF;  // White background
 end

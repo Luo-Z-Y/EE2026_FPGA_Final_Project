@@ -31,6 +31,17 @@ module Top_Student(
     wire [11:0] rgb_next_win;
     wire [11:0] rgb_next_lose;
     
+    wire grid;
+    assign grid = (w_x < 343) && (w_y < 383) && (
+                                      ((w_x < GRID_START_X + GRID_WIDTH * GRID_SPACING_X) &&
+                                      (w_x >= GRID_START_X) &&
+                                      (w_y >= GRID_START_Y && w_y < GRID_START_Y + GRID_HEIGHT * GRID_SPACING_Y) &&
+                                      (w_x % GRID_SPACING_X < GRID_THICKNESS)) ||
+                                      ((w_y < GRID_START_Y + GRID_HEIGHT * GRID_SPACING_Y) &&
+                                      (w_y >= GRID_START_Y) &&
+                                      (w_x >= GRID_START_X && w_x < GRID_START_X + GRID_WIDTH * GRID_SPACING_X) &&
+                                      (w_y % GRID_SPACING_Y < GRID_THICKNESS)));
+    
     // VGA Controller
     vga_controller vga(.clk_100MHz(clk), .reset(btnC), .hsync(hsync), .vsync(vsync),
                        .video_on(w_video_on), .p_tick(w_p_tick), .x(w_x), .y(w_y));
@@ -50,15 +61,7 @@ module Top_Student(
     begin
         if(w_p_tick)
         begin
-            if ((w_x < 343) && (w_y < 383) && (
-                                  ((w_x < GRID_START_X + GRID_WIDTH * GRID_SPACING_X) &&
-                                  (w_x >= GRID_START_X) &&
-                                  (w_y >= GRID_START_Y && w_y < GRID_START_Y + GRID_HEIGHT * GRID_SPACING_Y) &&
-                                  (w_x % GRID_SPACING_X < GRID_THICKNESS)) ||
-                                  ((w_y < GRID_START_Y + GRID_HEIGHT * GRID_SPACING_Y) &&
-                                  (w_y >= GRID_START_Y) &&
-                                  (w_x >= GRID_START_X && w_x < GRID_START_X + GRID_WIDTH * GRID_SPACING_X) &&
-                                  (w_y % GRID_SPACING_Y < GRID_THICKNESS))))
+            if (grid)
             begin
                 rgb_reg <= rgb_next_board;
             end
