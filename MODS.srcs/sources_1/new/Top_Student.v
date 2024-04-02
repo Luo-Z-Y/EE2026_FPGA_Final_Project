@@ -7,7 +7,8 @@ module Top_Student(
     output vsync,       // to VGA connector
     output [11:0] rgb,   // to DAC, to VGA connector
     inout PS2Clk,
-    inout PS2Data
+    inout PS2Data,
+    output [15:0] led
     );
     
     // Define grid parameters
@@ -15,7 +16,7 @@ module Top_Student(
     localparam GRID_HEIGHT = 15; // Height of the grid (number of rows)
     localparam GRID_SPACING_X = 20; // Spacing between vertical grid lines
     localparam GRID_SPACING_Y = 20; // Spacing between horizontal grid lines
-    localparam GRID_THICKNESS = 3; // Thickness of grid lines
+    localparam GRID_THICKNESS = 1; // Thickness of grid lines
     
     // Calculate starting position of the grid to place it at the left middle of the screen
     localparam GRID_START_X = 60; // Adjust as needed for the left padding
@@ -31,16 +32,23 @@ module Top_Student(
     wire [11:0] rgb_next_win;
     wire [11:0] rgb_next_lose;
     
+    wire [255:0] pieceA;
+    wire [255:0] pieceB;
+    
+    wire mouse_x;
+    wire mouse_y;
+    wire clicked;
+    
     wire grid;
-    assign grid = (w_x < 343) && (w_y < 383) && (
-                                      ((w_x < GRID_START_X + GRID_WIDTH * GRID_SPACING_X) &&
-                                      (w_x >= GRID_START_X) &&
-                                      (w_y >= GRID_START_Y && w_y < GRID_START_Y + GRID_HEIGHT * GRID_SPACING_Y) &&
-                                      (w_x % GRID_SPACING_X < GRID_THICKNESS)) ||
-                                      ((w_y < GRID_START_Y + GRID_HEIGHT * GRID_SPACING_Y) &&
-                                      (w_y >= GRID_START_Y) &&
-                                      (w_x >= GRID_START_X && w_x < GRID_START_X + GRID_WIDTH * GRID_SPACING_X) &&
-                                      (w_y % GRID_SPACING_Y < GRID_THICKNESS)));
+//    assign grid = (w_x < 343) && (w_y < 383) && (
+//                                      ((w_x < GRID_START_X + GRID_WIDTH * GRID_SPACING_X) &&
+//                                      (w_x >= GRID_START_X) &&
+//                                      (w_y >= GRID_START_Y && w_y < GRID_START_Y + GRID_HEIGHT * GRID_SPACING_Y) &&
+//                                      (w_x % GRID_SPACING_X < GRID_THICKNESS)) ||
+//                                      ((w_y < GRID_START_Y + GRID_HEIGHT * GRID_SPACING_Y) &&
+//                                      (w_y >= GRID_START_Y) &&
+//                                      (w_x >= GRID_START_X && w_x < GRID_START_X + GRID_WIDTH * GRID_SPACING_X) &&
+//                                      (w_y % GRID_SPACING_Y < GRID_THICKNESS)));
     
     // VGA Controller
     vga_controller vga(.clk_100MHz(clk), .reset(btnC), .hsync(hsync), .vsync(vsync),
@@ -50,11 +58,12 @@ module Top_Student(
     ascii_test at(.clk(clk), .video_on(w_video_on), .x(w_x), .y(w_y), .rgb(rgb_next_test));
     
     //board
-    board_animation ba (.clk(clk), .video_on(w_video_on), .x(w_x), .y(w_y), .rgb(rgb_next_board));
+    board_animation ba (.clk(clk), .video_on(w_video_on), .x(w_x), .y(w_y), .rgb(rgb_next_board), 
+    .x_in(mouse_x), .y_in(mouse_y), .clicked(clicked), .grid(grid));
     
     //cursor
     cursor_animation ca (.clk(clk), .video_on(w_video_on), .x(w_x), .y(w_y), .rgb(rgb_next_cursor), 
-    .PS2Clk(PS2Clk), .PS2Data(PS2Data));
+    .PS2Clk(PS2Clk), .PS2Data(PS2Data), .led(led), .x_out(mouse_x), .y_out(mouse_y), .clicked(clicked));
     
     // rgb buffer
     always @(posedge clk)

@@ -4,7 +4,11 @@ module cursor_animation(
     input [9:0] x, y,
     output reg [11:0] rgb,
     inout PS2Clk,
-    inout PS2Data
+    inout PS2Data,
+    output [15:0] led,
+    output reg x_out,
+    output reg y_out,
+    output clicked
 );
 
 wire [11:0] xpos;
@@ -72,12 +76,20 @@ always @* begin
         end
 end
 
+assign led = xpos + ypos;
+assign clicked = left;
+
 // Determine RGB output based on cursor position and visibility
 always @* begin
     if (~video_on)
         rgb = 12'h000;      // blank
     else if (x >= cursor_x && x < cursor_x + 5 && y >= cursor_y && y < cursor_y + 5) // Ensure cursor is within valid screen range
-        if (left) rgb = 12'hF00; //Blue cursor
+        if (left) 
+        begin
+            rgb = 12'hF00; //Blue cursor
+            x_out = xpos;
+            y_out = ypos;
+        end
         else rgb = 12'h000;  // Black cursor
     else
         rgb = 12'hFFF;  // White background
