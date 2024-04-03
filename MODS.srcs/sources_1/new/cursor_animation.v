@@ -8,7 +8,8 @@ module cursor_animation(
     output [15:0] led,
     output reg x_out,
     output reg y_out,
-    output clicked
+    output clicked,
+    output is_cursor
 );
 
 wire [11:0] xpos;
@@ -79,6 +80,8 @@ end
 assign led = xpos + ypos;
 assign clicked = left;
 
+assign is_cursor = (x >= cursor_x && x < cursor_x + 5 && y >= cursor_y && y < cursor_y + 5);
+
 // Determine RGB output based on cursor position and visibility
 always @* begin
     if (~video_on)
@@ -90,9 +93,9 @@ always @* begin
             x_out = xpos;
             y_out = ypos;
         end
-        else rgb = 12'h000;  // Black cursor
+        else rgb = 12'h000;// White cursors
     else
-        rgb = 12'hFFF;  // White background
+        rgb <= 12'h6AD;
 end
 
 endmodule

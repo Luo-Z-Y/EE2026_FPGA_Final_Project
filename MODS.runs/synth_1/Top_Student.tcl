@@ -51,6 +51,11 @@ read_verilog -library xil_defaultlib {
   {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/EE2026_FPGA_Final_Project/MODS.srcs/sources_1/new/ascii_rom.v}
   {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/EE2026_FPGA_Final_Project/MODS.srcs/sources_1/new/board_animation.v}
   {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/EE2026_FPGA_Final_Project/MODS.srcs/sources_1/new/cursor_animation.v}
+  {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/EE2026_FPGA_Final_Project/MODS.srcs/sources_1/new/red_win_animation.v}
+  {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/EE2026_FPGA_Final_Project/MODS.srcs/sources_1/new/black_win_animation.v}
+  {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/EE2026_FPGA_Final_Project/MODS.srcs/sources_1/new/white_win_animation.v}
+  {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/EE2026_FPGA_Final_Project/MODS.srcs/sources_1/new/replay_animation.v}
+  {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/EE2026_FPGA_Final_Project/MODS.srcs/sources_1/new/player_animation.v}
 }
 read_vhdl -library xil_defaultlib {
   {C:/Users/Luo Zhiyang/OneDrive - National University of Singapore/Y2S2/EE2026/EE2026 Project/MODS_Final_Project.xpr/MODS/EE2026_FPGA_Final_Project/MODS.srcs/sources_1/imports/Desktop/Mouse_Control.vhd}
